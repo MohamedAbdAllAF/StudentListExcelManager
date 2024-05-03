@@ -1,3 +1,4 @@
+using LMS.Views;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using StudentListExcelManager.IServices;
@@ -22,7 +23,7 @@ namespace StudentListExcelManager
             var host = CreateHostBuilder().Build();
             ServiceProvider = host.Services;
 
-            Application.Run(ServiceProvider.GetRequiredService<Form1>());
+            Application.Run(ServiceProvider.GetRequiredService<FRMMain>());
         }
 
         public static IServiceProvider ServiceProvider { get; private set; }
@@ -33,7 +34,7 @@ namespace StudentListExcelManager
                     services.AddDbContext<ApplicationDbContext>();
                     services.AddTransient<UnitOfWork>();
                     services.AddTransient<IStudentService, StudentService>();
-                    services.AddTransient<Form1>();
+                    services.AddTransient<FRMMain>();
                 });
         }
     }

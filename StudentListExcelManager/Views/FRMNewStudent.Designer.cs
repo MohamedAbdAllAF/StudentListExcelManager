@@ -1,6 +1,6 @@
 ﻿namespace StudentListExcelManager
 {
-    partial class Form1
+    partial class FRMNewStudent
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,12 +30,15 @@
         {
             SuspendLayout();
             // 
-            // Form1
+            // FRMNewStudent
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1265, 724);
-            Name = "Form1";
+            ClientSize = new Size(1050, 680);
+            Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(5, 5, 5, 5);
+            Name = "FRMNewStudent";
             Text = "Form1";
             ResumeLayout(false);
         }
