@@ -123,9 +123,9 @@ namespace StudentListExcelManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_restore_down_48 {
+        internal static System.Drawing.Bitmap icons8_restore_down_32 {
             get {
-                object obj = ResourceManager.GetObject("icons8-restore-down-48", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-restore-down-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

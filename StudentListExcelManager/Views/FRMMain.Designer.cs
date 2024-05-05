@@ -41,6 +41,7 @@
             pnlSideBar = new Panel();
             btnSearch = new Button();
             btnAddNewStudent = new Button();
+            btnConvertToExcel = new Button();
             ((System.ComponentModel.ISupportInitialize)picLoader).BeginInit();
             pnlHeader.SuspendLayout();
             pnlLogo.SuspendLayout();
@@ -161,6 +162,7 @@
             // pnlSideBar
             // 
             pnlSideBar.BackColor = Color.FromArgb(19, 20, 50);
+            pnlSideBar.Controls.Add(btnConvertToExcel);
             pnlSideBar.Controls.Add(btnSearch);
             pnlSideBar.Controls.Add(btnAddNewStudent);
             pnlSideBar.Controls.Add(pnlLogo);
@@ -201,6 +203,24 @@
             btnAddNewStudent.TabIndex = 1;
             btnAddNewStudent.Text = "Add New Student";
             btnAddNewStudent.UseVisualStyleBackColor = true;
+            btnAddNewStudent.Click += btnAddNewStudent_Click_1;
+            // 
+            // btnConvertToExcel
+            // 
+            btnConvertToExcel.Dock = DockStyle.Bottom;
+            btnConvertToExcel.FlatAppearance.BorderColor = Color.FromArgb(50, 80, 150);
+            btnConvertToExcel.FlatAppearance.MouseDownBackColor = Color.FromArgb(50, 80, 150);
+            btnConvertToExcel.FlatAppearance.MouseOverBackColor = Color.FromArgb(19, 20, 50);
+            btnConvertToExcel.FlatStyle = FlatStyle.Flat;
+            btnConvertToExcel.ForeColor = Color.White;
+            btnConvertToExcel.Location = new Point(0, 640);
+            btnConvertToExcel.Margin = new Padding(1);
+            btnConvertToExcel.Name = "btnConvertToExcel";
+            btnConvertToExcel.Size = new Size(230, 40);
+            btnConvertToExcel.TabIndex = 3;
+            btnConvertToExcel.Text = "Export as Excel";
+            btnConvertToExcel.UseVisualStyleBackColor = true;
+            btnConvertToExcel.Click += btnConvertToExcel_Click;
             // 
             // FRMMain
             // 
@@ -241,5 +261,6 @@
         private Button btnAddNewStudent;
         private Button btnSearch;
         private Label lblTitle;
+        private Button btnConvertToExcel;
     }
 }

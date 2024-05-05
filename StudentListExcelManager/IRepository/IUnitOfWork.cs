@@ -4,9 +4,9 @@ namespace StudentListExcelManager.IRepository
 {
     public interface IUnitOfWork : IDisposable
     {
-        IGeneralRepository<Phone> Departments { get; }
+        IGeneralRepository<Phone> Phones { get; }
         IGeneralRepository<Student> Students { get; }
-        
+        void EnsureDatabaseCreated();
         int Save();
         Task<int> SaveAsync();
     }

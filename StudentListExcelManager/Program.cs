@@ -34,6 +34,8 @@ namespace StudentListExcelManager
                     services.AddDbContext<ApplicationDbContext>();
                     services.AddTransient<UnitOfWork>();
                     services.AddTransient<IStudentService, StudentService>();
+                    services.AddTransient<ILocationService, LocationService>();
+                    services.AddTransient<FormService>();
                     services.AddTransient<FRMMain>();
                 });
         }
